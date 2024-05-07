@@ -9,16 +9,25 @@
 <body>
     
     <!-- parent wrapper div  -->
-    <div class="div">
-        <div>Increment and Decrement</div>
-        <div>
-            <button><i class="fa-solid fa-minus"></i></button>
-            <div></div>
-            <button><i class="fa-solid fa-plus"></i></button>
+    <div class="w-[100vw] h-[100vh] overflow-hidden flex flex-col items-center justify-center bg-[#344151] gap-10">
+
+        <!-- content div  -->
+        <!-- secondary div  -->
+        <div class="text-[#0398d4] font-medium text-[35px]">Increment And Decrement</div>
+        <!-- button div  -->
+        <div class="flex space-between bg-white text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5">
+            <!-- button 1 (Negative) -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-4"><i class="fa-solid fa-minus"></i></button>
+            <!-- value  -->
+            <div id="counter" class="font-bold">
+                0
+            </div>
+            <!-- button 2 (Positive) -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-4"><i class="fa-solid fa-plus"></i></button>
         </div>
     </div>
 
     <script src="https://kit.fontawesome.com/a359a0ec6e.js" crossorigin="anonymous"></script>
-    
+    <script src="index.js"></script>
 </body>
 </html>
